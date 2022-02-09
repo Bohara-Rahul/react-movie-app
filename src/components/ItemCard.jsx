@@ -28,7 +28,7 @@ const ItemCard = ({ trending }) => {
 
   return (
       <Wrapper>
-            <h2>Trending</h2>
+            <h2>Trending this week</h2>
             <section className="btn-container">
                 <button onClick={() => {
                     setMoviesTab(false)

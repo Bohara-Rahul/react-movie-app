@@ -11,7 +11,7 @@ const HomePage = () => {
 
   const fetchTrending = async () => {
         const response = await fetch(
-          `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_MOVIE_API_KEY}`
+          `https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_MOVIE_API_KEY}`
         )
         const data = await response.json()
         setTrending(data.results)
