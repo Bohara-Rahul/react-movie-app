@@ -50,7 +50,7 @@ const ItemPage = () => {
         )}
         <p>Popularity: {item.popularity}</p>
         {item.genres && (
-        <p>Genres: {item.genres.map(genre => (
+        <p className="genres">Genres: {item.genres.map(genre => (
           <span className="genre" key={genre.id}>{genre.name}</span>
           ))}
         </p>
@@ -93,6 +93,9 @@ const Wrapper = styled.section`
 
   @media screen and (max-width: 600px) {
      flex-wrap: wrap;
+     img {
+       height: 30rem;
+     }
      article {
        margin: auto;
      }
