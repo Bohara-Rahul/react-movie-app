@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components';
-import ItemCard from "../components/ItemCard";
+import Items from "../components/Items";
 
 const HomePage = () => {
   const [trending, setTrending] = useState([])
@@ -19,8 +19,9 @@ const HomePage = () => {
   
   return (
       <Wrapper>
-           {trending && <ItemCard trending={trending} />}
-    </Wrapper>
+          <h1>Movie App</h1>
+           {trending && <Items trending={trending} />}
+      </Wrapper>
   );
 };
 
@@ -28,6 +29,13 @@ const Wrapper = styled.div`
     max-width: 960px;
     width: 100vw;
     margin: auto;
+
+    h1 {
+      text-align: center;
+      color: green;
+      font-weight: bold;
+      font-size: 3rem;
+    }
    
 `
 
