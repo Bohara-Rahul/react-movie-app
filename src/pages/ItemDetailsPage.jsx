@@ -67,9 +67,7 @@ const ItemPage = () => {
 const Wrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  
-
+ 
   img {
     border-radius: 1rem;
     height: 40rem;
@@ -90,6 +88,13 @@ const Wrapper = styled.section`
     margin: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
+  }
+
+  @media screen and (max-width: 600px) {
+     flex-wrap: wrap;
+     article {
+       margin: auto;
+     }
   }
 `
 
