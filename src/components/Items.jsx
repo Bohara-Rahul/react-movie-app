@@ -53,27 +53,13 @@ const Items = ({ trending }) => {
             </section>
         <section className="item-container">  
         {allTab && trending.map(item => (
-         <ItemCard item={item} />
+         <ItemCard key={item.id} item={item} />
         ))}
          {moviesTab && movies.map(item => (
-          // <article key={movie.id}>
-          //   <img 
-          //     src={"https://image.tmdb.org/t/p/w500" + movie.backdrop_path} 
-          //     alt={movie.title}
-          //   />
-          //   <h2>{movie.title}</h2>
-          // </article>
-          <ItemCard item={item} />
+          <ItemCard key={item.id} item={item} />
         ))}
         {tvShowsTab && tvShows.map(item => (
-          <ItemCard item={item} />
-        //  <article key={tvShow.id}>
-        //     <img 
-        //       src={"https://image.tmdb.org/t/p/w500" + tvShow.backdrop_path}
-        //       alt={tvShow.name} 
-        //     />
-        //     <h2>{tvShow.name}</h2>
-        //   </article>
+          <ItemCard key={item.id} item={item} />
         ))}
         </section>  
       </Wrapper>
