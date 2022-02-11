@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
 
 const ItemPage = () => {
@@ -9,8 +9,7 @@ const ItemPage = () => {
   const getItemDetails = async (id, media_type) => {
     const response = await fetch(`https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_MOVIE_API_KEY}`)
     const itemDetails = await response.json()
-    setItem(itemDetails)
-    console.log(item)                     
+    setItem(itemDetails)                     
   }
 
   useEffect(() => {
@@ -57,7 +56,7 @@ const ItemPage = () => {
         </p>
         )}
 
-        <a href={`${item.homepage}`} target="_blank">Homepage</a>
+        <a href={`${item.homepage}`} target="_blank" rel='noopener'>Homepage</a>
       </article>
       </>
       )}
