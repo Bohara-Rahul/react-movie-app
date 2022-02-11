@@ -71,6 +71,7 @@ const Wrapper = styled.section`
   img {
     border-radius: 1rem;
     height: 40rem;
+    margin-right: 4rem;
   }
 
   .budget {
