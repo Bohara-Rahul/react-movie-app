@@ -56,7 +56,7 @@ const ItemPage = () => {
         </p>
         )}
 
-        <a href={`${item.homepage}`} target="_blank" rel='noopener'>Homepage</a>
+        <a href={`${item.homepage}`} target="_blank" rel='noreferrer'>Homepage</a>
       </article>
       </>
       )}
