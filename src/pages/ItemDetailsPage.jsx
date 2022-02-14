@@ -48,7 +48,7 @@ const ItemPage = () => {
         {item.number_of_episodes && (
           <p>No, of Episodes: {item.number_of_episodes}</p>
         )}
-        <p>Popularity: {item.popularity}</p>
+       
         {item.genres && (
         <p className="genres">{item.genres.map(genre => (
           <span className="genre" key={genre.id}>{genre.name}</span>
