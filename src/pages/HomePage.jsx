@@ -26,7 +26,7 @@ const HomePage = () => {
 };
 
 const Wrapper = styled.div`
-    max-width: 960px;
+    max-width: 1200px;
     width: 100vw;
     margin: auto;
 

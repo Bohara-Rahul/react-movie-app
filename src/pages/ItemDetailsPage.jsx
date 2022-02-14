@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const ItemPage = () => {
@@ -30,7 +30,7 @@ const ItemPage = () => {
         <h2>
           {item.name || item.original_title} {item.tagline && (<span>{item.tagline.split('.')[0]}</span>)}
         </h2>
-        <p>Overview: {item.overview}</p>
+        <p>{item.overview}</p>
         <p>{item.release_date 
           ? `Released on: ${item.release_date}`
           : `First Aired on: ${item.first_air_date}`}
@@ -50,17 +50,18 @@ const ItemPage = () => {
         )}
         <p>Popularity: {item.popularity}</p>
         {item.genres && (
-        <p className="genres">Genres: {item.genres.map(genre => (
+        <p className="genres">{item.genres.map(genre => (
           <span className="genre" key={genre.id}>{genre.name}</span>
           ))}
         </p>
         )}
 
-        <a href={`${item.homepage}`} target="_blank" rel='noreferrer'>Homepage</a>
+        <a className="item-homepage" href={`${item.homepage}`} target="_blank" rel='noreferrer'>Go to homepage of {item.title || item.name}</a>
       </article>
       </>
       )}
     </Wrapper>
+    
   )
 }
 
@@ -89,6 +90,11 @@ const Wrapper = styled.section`
     margin: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
+  }
+
+  .item-homepage {
+    display: block;
+    margin-top: 5rem;
   }
 
   @media screen and (max-width: 600px) {
