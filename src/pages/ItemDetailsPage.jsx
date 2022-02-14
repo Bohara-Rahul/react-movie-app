@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
 
 const ItemPage = () => {
@@ -55,6 +55,8 @@ const ItemPage = () => {
           ))}
         </p>
         )}
+
+        <p>Average Vote: {item.vote_average} from {item.vote_count} votes</p>
 
         <a className="item-homepage" href={`${item.homepage}`} target="_blank" rel='noreferrer'>Go to homepage of {item.title || item.name}</a>
       </article>
