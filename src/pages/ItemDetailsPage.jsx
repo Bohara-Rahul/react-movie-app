@@ -83,8 +83,13 @@ const Wrapper = styled.section`
     color: green;
   }
 
+  .genres {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .genre {
-    width: 5rem;
+    width: auto;
     height: 2rem;
     background-color: #ece1e1;
     margin: 1rem;
