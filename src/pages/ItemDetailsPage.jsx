@@ -36,11 +36,11 @@ const ItemPage = () => {
           : `First Aired on: ${item.first_air_date}`}
           </p>
         {item.budget && (
-          <p>Total Budget: <span className="budget">${item.budget}</span></p>
+          <p>Total Budget: <span className="budget">${item.budget.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</span></p>
         )}
         
         {item.revenue && (
-          <p>Total Revenue: <span className="revenue">${item.revenue}</span></p>
+          <p>Total Revenue: <span className="revenue">${item.revenue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</span></p>
         )}
         {item.number_of_seasons && (
           <p>No, of seasons: {item.number_of_seasons}</p>
