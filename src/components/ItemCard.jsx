@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const ItemCard = ({ item }) => {
-
   return (
       <Wrapper>
             <Link to={`/item/${item.media_type}/${item.id}`} className="link-container">
@@ -22,8 +21,10 @@ const ItemCard = ({ item }) => {
 }
 
 const Wrapper = styled.div`
+    margin: 0 auto;
     .link-container {
         text-decoration: none;
+        color: #f1efef;
     }
 `
 

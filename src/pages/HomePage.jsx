@@ -28,11 +28,10 @@ const HomePage = () => {
 const Wrapper = styled.div`
     max-width: 1200px;
     width: 100vw;
-    margin: auto;
+    margin: 0 auto;
 
     h1 {
       text-align: center;
-      color: green;
       font-weight: bold;
       font-size: 3rem;
     }
