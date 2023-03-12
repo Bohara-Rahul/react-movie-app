@@ -7,6 +7,9 @@ body {
 }
 
 a {
-  color: #222121;
+  /* background-color: whitesmoke; */
+  color: #1b1a1a;
+  padding: 0.2rem;
+  font-weight: bold;
 }
 
