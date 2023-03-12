@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components';
+import Footer from '../components/Footer';
 import Items from "../components/Items";
 
 const HomePage = () => {
@@ -21,6 +22,8 @@ const HomePage = () => {
       <Wrapper>
           <h1>Movie App</h1>
            {trending && <Items trending={trending} />}
+
+          <Footer />
       </Wrapper>
   );
 };
