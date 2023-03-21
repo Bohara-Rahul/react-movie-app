@@ -94,12 +94,14 @@ const Wrapper = styled.section`
     width: auto;
     height: 2rem;
     background-color: #ece1e1;
+    color: #000;
     margin: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     border-radius: 1rem;
   }
 
   .item-homepage {
+    color: white;
     display: block;
     margin-top: 5rem;
   }
