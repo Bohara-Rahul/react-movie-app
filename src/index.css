@@ -2,13 +2,13 @@
 
 body {
  font-family: 'Poppins', sans-serif;
- background-color: #514b4b;
+ background-color: rgb(96, 48, 143);
  color: rgb(238, 233, 233);
 }
 
 a {
   /* background-color: whitesmoke; */
-  color: #1b1a1a;
+  color: rgb(49, 6, 49);
   padding: 0.2rem;
   font-weight: bold;
 }

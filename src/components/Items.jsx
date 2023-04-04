@@ -82,7 +82,7 @@ const Wrapper = styled.div`
         padding: 1.5rem;
     }
     .btn-active {
-        background-color: #222121;
+        background-color: #481977;
         color: #fff;
     }
     .item-container {
